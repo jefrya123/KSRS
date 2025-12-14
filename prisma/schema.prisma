@@ -1,0 +1,184 @@
+// Prisma Schema for Korean SRS Application
+// Database: PostgreSQL
+// Algorithms: SM-2 (current), FSRS (future)
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================================
+// User Management
+// ============================================================================
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String?
+  settings  Json     @default("{}")  // User preferences: daily_goal, theme, audio_autoplay, etc.
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  decks         Deck[]
+  cardProgress  CardProgress[]
+
+  @@map("users")
+}
+
+// ============================================================================
+// Content Organization
+// ============================================================================
+
+model Deck {
+  id          String   @id @default(uuid())
+  userId      String   @map("user_id")
+  name        String
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  user  User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cards Card[]
+
+  @@index([userId])
+  @@map("decks")
+}
+
+model Card {
+  id                 String   @id @default(uuid())
+  deckId             String   @map("deck_id")
+  korean             String
+  english            String
+  notes              String?
+  exampleKorean      String?  @map("example_korean")
+  exampleEnglish     String?  @map("example_english")
+  romanization       String?
+
+  // Usefulness scoring for prioritization
+  usefulnessScore    Int      @default(50) @map("usefulness_score")  // 0-100
+  usefulnessReasons  String[] @default([]) @map("usefulness_reasons") // ["high_frequency", "topik_essential", etc.]
+  isPattern          Boolean  @default(false) @map("is_pattern")      // Grammar pattern vs vocabulary
+
+  // Media
+  imageUrl           String?  @map("image_url")
+  audioUrl           String?  @map("audio_url")
+
+  createdAt          DateTime @default(now()) @map("created_at")
+  updatedAt          DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  deck          Deck           @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  cardProgress  CardProgress[]
+  cardTags      CardTag[]
+
+  @@index([deckId])
+  @@index([usefulnessScore])
+  @@map("cards")
+}
+
+model Tag {
+  id        String   @id @default(uuid())
+  name      String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  cardTags CardTag[]
+
+  @@map("tags")
+}
+
+model CardTag {
+  cardId    String   @map("card_id")
+  tagId     String   @map("tag_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  // Relations
+  card Card @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  tag  Tag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([cardId, tagId])
+  @@index([cardId])
+  @@index([tagId])
+  @@map("card_tags")
+}
+
+// ============================================================================
+// Spaced Repetition (SM-2 Algorithm + FSRS Future)
+// ============================================================================
+
+model CardProgress {
+  id             String    @id @default(uuid())
+  cardId         String    @map("card_id")
+  userId         String    @map("user_id")
+
+  // SM-2 Algorithm Fields
+  easeFactor     Float     @default(2.5) @map("ease_factor")      // Difficulty multiplier (typically 1.3-2.5+)
+  intervalDays   Int       @default(0) @map("interval_days")      // Days until next review
+  repetitions    Int       @default(0)                            // Consecutive successful reviews
+
+  // Scheduling
+  dueAt          DateTime  @map("due_at")
+  lastReviewedAt DateTime? @map("last_reviewed_at")
+
+  // FSRS Compatibility (future use)
+  difficulty     Float?                                           // FSRS difficulty parameter
+
+  createdAt      DateTime  @default(now()) @map("created_at")
+  updatedAt      DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  card       Card         @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  user       User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reviewLogs ReviewLog[]
+
+  @@unique([cardId, userId])
+  @@index([dueAt])
+  @@index([userId, dueAt])
+  @@map("card_progress")
+}
+
+// ============================================================================
+// Review History & Analytics
+// ============================================================================
+
+model ReviewLog {
+  id             String     @id @default(uuid())
+  cardProgressId String     @map("card_progress_id")
+
+  // Review Performance
+  rating         Int                                              // 1=Again, 2=Hard, 3=Good, 4=Easy
+  reviewMode     ReviewMode @map("review_mode")
+  responseTimeMs Int        @map("response_time_ms")              // Milliseconds
+
+  // User Input (for typing/voice modes)
+  userAnswer     String?    @map("user_answer")                  // Typed or transcribed answer
+
+  createdAt      DateTime   @default(now()) @map("created_at")
+
+  // Relations
+  cardProgress CardProgress @relation(fields: [cardProgressId], references: [id], onDelete: Cascade)
+
+  @@index([cardProgressId])
+  @@index([createdAt])
+  @@map("review_logs")
+}
+
+// ============================================================================
+// Enums
+// ============================================================================
+
+enum ReviewMode {
+  FLASHCARD  // Traditional card flip
+  TYPING     // Type the translation
+  LISTENING  // Audio-based review
+  VOICE      // Voice response (future feature)
+
+  @@map("review_mode")
+}

@@ -1,0 +1,227 @@
+ksrs/
+├── app/
+│   ├── (auth)/
+│   │   ├── login/
+│   │   │   └── page.tsx                    # Login page with credentials form
+│   │   ├── register/
+│   │   │   └── page.tsx                    # User registration page
+│   │   └── layout.tsx                      # Auth layout (centered, minimal)
+│   │
+│   ├── (dashboard)/
+│   │   ├── page.tsx                        # Main dashboard (deck list, stats)
+│   │   └── layout.tsx                      # Dashboard layout with navigation
+│   │
+│   ├── deck/
+│   │   └── [id]/
+│   │       ├── page.tsx                    # Deck detail page (card list, actions)
+│   │       ├── edit/
+│   │       │   └── page.tsx                # Edit deck metadata
+│   │       └── layout.tsx                  # Deck-specific layout
+│   │
+│   ├── review/
+│   │   └── [deckId]/
+│   │       ├── recognition/
+│   │       │   └── page.tsx                # Recognition review mode (flip cards)
+│   │       ├── typing/
+│   │       │   └── page.tsx                # Typing review mode (input answer)
+│   │       └── layout.tsx                  # Review session layout
+│   │
+│   ├── api/
+│   │   ├── auth/
+│   │   │   └── [...nextauth]/
+│   │   │       └── route.ts                # NextAuth.js configuration
+│   │   │
+│   │   ├── decks/
+│   │   │   ├── route.ts                    # GET (list), POST (create) decks
+│   │   │   ├── [id]/
+│   │   │   │   ├── route.ts                # GET, PATCH, DELETE single deck
+│   │   │   │   └── export/
+│   │   │   │       └── route.ts            # GET export deck as JSON
+│   │   │   └── import/
+│   │   │       └── route.ts                # POST import deck from JSON
+│   │   │
+│   │   ├── cards/
+│   │   │   ├── route.ts                    # GET (list), POST (create) cards
+│   │   │   ├── [id]/
+│   │   │   │   └── route.ts                # GET, PATCH, DELETE single card
+│   │   │   └── batch/
+│   │   │       └── route.ts                # POST batch create/update cards
+│   │   │
+│   │   ├── review/
+│   │   │   ├── due/
+│   │   │   │   └── route.ts                # GET cards due for review
+│   │   │   └── submit/
+│   │   │       └── route.ts                # POST submit review response
+│   │   │
+│   │   └── ai/
+│   │       └── generate/
+│   │           └── route.ts                # POST AI card generation
+│   │
+│   ├── layout.tsx                          # Root layout (providers, fonts)
+│   ├── globals.css                         # Global styles and Tailwind imports
+│   ├── page.tsx                            # Landing page (redirects to dashboard)
+│   └── error.tsx                           # Global error boundary
+│
+├── components/
+│   ├── auth/
+│   │   ├── LoginForm.tsx                   # Login credentials form
+│   │   ├── RegisterForm.tsx                # Registration form
+│   │   └── AuthProvider.tsx                # Session provider wrapper
+│   │
+│   ├── dashboard/
+│   │   ├── DeckCard.tsx                    # Individual deck card display
+│   │   ├── DeckGrid.tsx                    # Grid of deck cards
+│   │   ├── StatsOverview.tsx               # Study statistics widget
+│   │   └── CreateDeckModal.tsx             # Modal for creating new deck
+│   │
+│   ├── deck/
+│   │   ├── CardList.tsx                    # List of cards in deck
+│   │   ├── CardListItem.tsx                # Single card list item
+│   │   ├── CardForm.tsx                    # Form for add/edit card
+│   │   ├── DeckActions.tsx                 # Deck action buttons (edit, delete)
+│   │   ├── DeckHeader.tsx                  # Deck title and metadata
+│   │   └── AIGenerateModal.tsx             # Modal for AI card generation
+│   │
+│   ├── review/
+│   │   ├── RecognitionCard.tsx             # Card flip component (show/hide)
+│   │   ├── TypingCard.tsx                  # Card with typing input
+│   │   ├── ReviewRating.tsx                # Rating buttons (0-5 quality)
+│   │   ├── ReviewProgress.tsx              # Progress bar and counter
+│   │   ├── ReviewComplete.tsx              # Completion summary screen
+│   │   └── AnswerFeedback.tsx              # Visual feedback for typed answer
+│   │
+│   ├── import-export/
+│   │   ├── ExportButton.tsx                # Button to export deck as JSON
+│   │   ├── ImportModal.tsx                 # Modal for importing JSON deck
+│   │   └── ImportValidator.tsx             # Visual validation feedback
+│   │
+│   └── ui/
+│       ├── Button.tsx                      # Reusable button component
+│       ├── Card.tsx                        # Card container component
+│       ├── Modal.tsx                       # Modal dialog component
+│       ├── Input.tsx                       # Text input component
+│       ├── Select.tsx                      # Select dropdown component
+│       ├── Textarea.tsx                    # Textarea component
+│       ├── Badge.tsx                       # Badge/tag component
+│       ├── Progress.tsx                    # Progress bar component
+│       ├── Spinner.tsx                     # Loading spinner
+│       ├── Alert.tsx                       # Alert/notification component
+│       └── Navbar.tsx                      # Navigation bar
+│
+├── lib/
+│   ├── srs/
+│   │   ├── sm2.ts                          # SM-2 algorithm implementation
+│   │   ├── types.ts                        # SRS-related TypeScript types
+│   │   ├── sm2.test.ts                     # Unit tests for SM-2
+│   │   └── constants.ts                    # SRS constants (default EF, etc)
+│   │
+│   ├── usefulness/
+│   │   ├── score.ts                        # Usefulness scoring algorithm
+│   │   ├── types.ts                        # Usefulness-related types
+│   │   ├── wordFrequency.ts                # Korean word frequency data
+│   │   ├── score.test.ts                   # Unit tests for scoring
+│   │   └── frequency-data.json             # JSON data file with frequencies
+│   │
+│   ├── ai/
+│   │   ├── generator.ts                    # Main AI generator interface
+│   │   ├── types.ts                        # AI provider types
+│   │   ├── providers/
+│   │   │   ├── openai.ts                   # OpenAI GPT integration
+│   │   │   ├── anthropic.ts                # Anthropic Claude integration
+│   │   │   └── base.ts                     # Base provider interface
+│   │   ├── prompts/
+│   │   │   ├── cardGeneration.ts           # Card generation prompts
+│   │   │   └── templates.ts                # Prompt templates
+│   │   └── rateLimit.ts                    # Rate limiting logic
+│   │
+│   ├── fuzzy/
+│   │   ├── matcher.ts                      # Fuzzy string matching algorithm
+│   │   ├── normalize.ts                    # Text normalization utilities
+│   │   ├── levenshtein.ts                  # Levenshtein distance calculation
+│   │   └── matcher.test.ts                 # Unit tests for fuzzy matching
+│   │
+│   ├── import-export/
+│   │   ├── serializer.ts                   # JSON serialization/deserialization
+│   │   ├── validator.ts                    # Import validation logic
+│   │   ├── types.ts                        # Import/export types
+│   │   └── schema.ts                       # JSON schema definition
+│   │
+│   ├── api/
+│   │   ├── decks.ts                        # Deck service functions
+│   │   ├── cards.ts                        # Card service functions
+│   │   ├── review.ts                       # Review service functions
+│   │   ├── scheduler.ts                    # Review scheduling logic
+│   │   ├── types.ts                        # API types and interfaces
+│   │   └── errors.ts                       # Custom error classes
+│   │
+│   ├── hooks/
+│   │   ├── useReview.ts                    # Review session state management
+│   │   ├── useDecks.ts                     # Deck data fetching hook
+│   │   ├── useCards.ts                     # Card data fetching hook
+│   │   ├── useKeyboard.ts                  # Keyboard shortcuts hook
+│   │   └── useLocalStorage.ts              # Local storage persistence hook
+│   │
+│   ├── utils/
+│   │   ├── date.ts                         # Date formatting utilities
+│   │   ├── validation.ts                   # Input validation helpers
+│   │   ├── cn.ts                           # Class name merger (clsx + twMerge)
+│   │   └── errors.ts                       # Error handling utilities
+│   │
+│   ├── auth.ts                             # Auth helper functions and config
+│   ├── db.ts                               # Prisma client singleton
+│   └── constants.ts                        # Global application constants
+│
+├── prisma/
+│   ├── schema.prisma                       # Database schema definition
+│   ├── seed.ts                             # Database seed script
+│   └── migrations/                         # Prisma migration files
+│       └── 20250101000000_init/
+│           └── migration.sql               # Initial migration SQL
+│
+├── public/
+│   ├── favicon.ico                         # Favicon
+│   ├── logo.svg                            # Application logo
+│   └── images/
+│       ├── hero.png                        # Landing page hero image
+│       └── placeholder.png                 # Placeholder images
+│
+├── tests/
+│   ├── unit/
+│   │   ├── srs/
+│   │   │   └── sm2.test.ts                 # SM-2 algorithm tests
+│   │   ├── usefulness/
+│   │   │   └── score.test.ts               # Usefulness scoring tests
+│   │   └── fuzzy/
+│   │       └── matcher.test.ts             # Fuzzy matching tests
+│   │
+│   ├── integration/
+│   │   ├── api/
+│   │   │   ├── decks.test.ts               # Deck API endpoint tests
+│   │   │   ├── cards.test.ts               # Card API endpoint tests
+│   │   │   └── review.test.ts              # Review API endpoint tests
+│   │   └── auth.test.ts                    # Authentication flow tests
+│   │
+│   └── e2e/
+│       ├── login.spec.ts                   # Login flow E2E test
+│       ├── review.spec.ts                  # Review session E2E test
+│       └── deck-management.spec.ts         # Deck CRUD E2E test
+│
+├── .env                                    # Environment variables (gitignored)
+├── .env.example                            # Environment variable template
+├── .env.production                         # Production environment variables
+├── .gitignore                              # Git ignore rules
+├── .eslintrc.json                          # ESLint configuration
+├── .prettierrc                             # Prettier configuration
+├── next.config.js                          # Next.js configuration
+├── tsconfig.json                           # TypeScript configuration
+├── tailwind.config.ts                      # Tailwind CSS configuration
+├── postcss.config.js                       # PostCSS configuration
+├── vercel.json                             # Vercel deployment configuration
+├── package.json                            # NPM dependencies and scripts
+├── package-lock.json                       # NPM lock file
+├── jest.config.js                          # Jest testing configuration
+├── playwright.config.ts                    # Playwright E2E test configuration
+├── README.md                               # Project documentation
+├── MILESTONES.md                           # Development milestones (this doc)
+├── REPO_TREE.txt                           # Project structure (this file)
+└── middleware.ts                           # Next.js middleware (auth protection)
