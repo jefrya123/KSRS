@@ -21,6 +21,11 @@ describe('normalizeKorean', () => {
     expect(normalizeKorean('네, 맞아요.')).toBe('네맞아요');
   });
 
+  it('removes emoji and other symbols', () => {
+    expect(normalizeKorean('안녕😀!')).toBe('안녕');
+    expect(normalizeKorean('안녕—(테스트)')).toBe('안녕테스트');
+  });
+
   it('handles Korean quotation marks', () => {
     expect(normalizeKorean('「안녕」')).toBe('안녕');
     expect(normalizeKorean('"감사합니다"')).toBe('감사합니다');

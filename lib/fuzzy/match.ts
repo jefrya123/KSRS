@@ -26,9 +26,9 @@ export interface Difference {
  */
 export function normalizeKorean(text: string): string {
   return text
-    .replace(/\s+/g, '')                    // Remove all whitespace
-    .replace(/[.,!?~…""''「」『』]/g, '')    // Remove punctuation
-    .replace(/[.,:;!?'"()[\]{}]/g, '')      // Remove ASCII punctuation
+    .replace(/\s+/g, '') // Remove all whitespace
+    // Remove punctuation and symbol characters (Unicode-aware)
+    .replace(/\p{P}|\p{S}/gu, '')
     .toLowerCase()
     .trim();
 }
