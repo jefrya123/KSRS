@@ -1,8 +1,4 @@
-node_modules/
+output/audio/
+__pycache__/
+*.pyc
 .env
-.next/
-dist/
-coverage/
-/.husky/_
-package-lock.json
-*.log
