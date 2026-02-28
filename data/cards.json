@@ -1,0 +1,17 @@
+{
+  "deck_name": "Korean SRS",
+  "version": 1,
+  "cards": [
+    {
+      "id": 1001,
+      "korean": "한국",
+      "english": "Korea",
+      "romanization": "hanguk",
+      "tags": ["noun", "country"],
+      "sentence": {
+        "korean": "선생님은 한국 사람이에요.",
+        "english": "The teacher is Korean."
+      }
+    }
+  ]
+}
