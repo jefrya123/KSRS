@@ -1,16 +1,1685 @@
 {
   "deck_name": "Korean SRS",
-  "version": 1,
+  "version": 2,
   "cards": [
     {
       "id": 1001,
       "korean": "한국",
       "english": "Korea",
-      "romanization": "hanguk",
-      "tags": ["noun", "country"],
+      "tags": [
+        "L3"
+      ],
       "sentence": {
         "korean": "선생님은 한국 사람이에요.",
         "english": "The teacher is Korean."
+      }
+    },
+    {
+      "id": 1002,
+      "korean": "러시아",
+      "english": "Russia",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "저는 러시아 사람이에요.",
+        "english": "I'm from Russia."
+      }
+    },
+    {
+      "id": 1003,
+      "korean": "미국",
+      "english": "United States",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "저는 미국 사람이에요.",
+        "english": "I'm from the U.S."
+      }
+    },
+    {
+      "id": 1004,
+      "korean": "베트남",
+      "english": "Vietnam",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "저는 베트남 사람이에요.",
+        "english": "I'm from Vietnam."
+      }
+    },
+    {
+      "id": 1005,
+      "korean": "멕시코",
+      "english": "Mexico",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "저는 멕시코 사람이에요.",
+        "english": "I'm from Mexico."
+      }
+    },
+    {
+      "id": 1006,
+      "korean": "중국",
+      "english": "China",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "저는 중국 사람이에요.",
+        "english": "I'm from China."
+      }
+    },
+    {
+      "id": 1007,
+      "korean": "선생님",
+      "english": "teacher",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "저는 선생님이에요.",
+        "english": "I'm a teacher."
+      }
+    },
+    {
+      "id": 1008,
+      "korean": "학생",
+      "english": "student",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "여러분은 학생이에요.",
+        "english": "You're students."
+      }
+    },
+    {
+      "id": 1009,
+      "korean": "어느",
+      "english": "which",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "어느 나라 사람이에요?",
+        "english": "Which country are you from?"
+      }
+    },
+    {
+      "id": 1010,
+      "korean": "나라",
+      "english": "country",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "한국, 러시아, 멕시코, 모두 나라예요.",
+        "english": "Korea, Russia, Mexico are all countries."
+      }
+    },
+    {
+      "id": 1011,
+      "korean": "사람",
+      "english": "person",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "저는 한국 사람이에요.",
+        "english": "I'm a Korean person."
+      }
+    },
+    {
+      "id": 1012,
+      "korean": "안녕",
+      "english": "hello (casual)",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "안녕?",
+        "english": "Hello?"
+      }
+    },
+    {
+      "id": 1013,
+      "korean": "안녕하세요",
+      "english": "hello (polite)",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "안녕하세요?",
+        "english": "Hello?"
+      }
+    },
+    {
+      "id": 1014,
+      "korean": "안녕하십니까",
+      "english": "hello (formal)",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "안녕하십니까?",
+        "english": "Hello? (formal)"
+      }
+    },
+    {
+      "id": 1015,
+      "korean": "씨",
+      "english": "Mr./Ms.",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "리사 씨는 미국 사람이에요.",
+        "english": "Ms. Lisa is American."
+      }
+    },
+    {
+      "id": 1016,
+      "korean": "친구",
+      "english": "friend",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "리사 씨예요. 친구예요.",
+        "english": "This is Lisa. She's a friend."
+      }
+    },
+    {
+      "id": 1017,
+      "korean": "영어",
+      "english": "English (language)",
+      "tags": [
+        "L3"
+      ],
+      "sentence": {
+        "korean": "리사 씨는 영어 선생님이에요.",
+        "english": "Lisa is an English teacher."
+      }
+    },
+    {
+      "id": 1018,
+      "korean": "이다",
+      "english": "to be (copula)",
+      "tags": [
+        "L3_Grammar"
+      ],
+      "sentence": {
+        "korean": "저는 베트남 사람이에요.",
+        "english": "I'm a Vietnamese person."
+      }
+    },
+    {
+      "id": 1019,
+      "korean": "은/는",
+      "english": "topic marker",
+      "tags": [
+        "L3_Grammar"
+      ],
+      "sentence": {
+        "korean": "저는 학생이에요.",
+        "english": "As for me, I'm a student."
+      }
+    },
+    {
+      "id": 1020,
+      "korean": "이/가",
+      "english": "subject marker",
+      "tags": [
+        "L3_Grammar"
+      ],
+      "sentence": {
+        "korean": "이름이 뭐예요?",
+        "english": "What's your name?"
+      }
+    },
+    {
+      "id": 1021,
+      "korean": "이에요/예요",
+      "english": "is/am (polite casual)",
+      "tags": [
+        "L3_Grammar"
+      ],
+      "sentence": {
+        "korean": "저는 학생이에요.",
+        "english": "I'm a student."
+      }
+    },
+    {
+      "id": 1022,
+      "korean": "아버지",
+      "english": "father",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "아버지예요.",
+        "english": "This is my father."
+      }
+    },
+    {
+      "id": 1023,
+      "korean": "어머니",
+      "english": "mother",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "어머니예요.",
+        "english": "This is my mother."
+      }
+    },
+    {
+      "id": 1024,
+      "korean": "동생",
+      "english": "younger sibling",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "동생이에요.",
+        "english": "This is my younger sibling."
+      }
+    },
+    {
+      "id": 1025,
+      "korean": "언니",
+      "english": "older sister (woman speaking)",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "언니예요.",
+        "english": "This is my older sister."
+      }
+    },
+    {
+      "id": 1026,
+      "korean": "누나",
+      "english": "older sister (man speaking)",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "누나예요.",
+        "english": "This is my older sister."
+      }
+    },
+    {
+      "id": 1027,
+      "korean": "오빠",
+      "english": "older brother (woman speaking)",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "오빠예요.",
+        "english": "This is my older brother."
+      }
+    },
+    {
+      "id": 1028,
+      "korean": "형",
+      "english": "older brother (man speaking)",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "형이에요.",
+        "english": "This is my older brother."
+      }
+    },
+    {
+      "id": 1029,
+      "korean": "가수",
+      "english": "singer",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "언니가 가수예요.",
+        "english": "My older sister is a singer."
+      }
+    },
+    {
+      "id": 1030,
+      "korean": "배우",
+      "english": "actor",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "형이 배우예요.",
+        "english": "My older brother is an actor."
+      }
+    },
+    {
+      "id": 1031,
+      "korean": "회사원",
+      "english": "office worker",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "어머니가 회사원이에요.",
+        "english": "My mother is an office worker."
+      }
+    },
+    {
+      "id": 1032,
+      "korean": "의사",
+      "english": "doctor",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "아버지가 의사예요.",
+        "english": "My father is a doctor."
+      }
+    },
+    {
+      "id": 1033,
+      "korean": "가족",
+      "english": "family",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "우리 가족이에요.",
+        "english": "This is my family."
+      }
+    },
+    {
+      "id": 1034,
+      "korean": "직업",
+      "english": "job / occupation",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "직업이 뭐예요?",
+        "english": "What's your job?"
+      }
+    },
+    {
+      "id": 1035,
+      "korean": "이름",
+      "english": "name",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "이름이 뭐예요?",
+        "english": "What's your name?"
+      }
+    },
+    {
+      "id": 1036,
+      "korean": "부모님",
+      "english": "parents",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "네, 부모님이에요.",
+        "english": "Yes, they're my parents."
+      }
+    },
+    {
+      "id": 1037,
+      "korean": "대학생",
+      "english": "university student",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "저는 대학생이에요.",
+        "english": "I'm a university student."
+      }
+    },
+    {
+      "id": 1038,
+      "korean": "사진",
+      "english": "picture / photo",
+      "tags": [
+        "L4"
+      ],
+      "sentence": {
+        "korean": "제 가족 사진이에요.",
+        "english": "This is my family photo."
+      }
+    },
+    {
+      "id": 1039,
+      "korean": "이/가 아니다",
+      "english": "to not be",
+      "tags": [
+        "L4_Grammar"
+      ],
+      "sentence": {
+        "korean": "저는 한국사람이 아니에요. 미국사람이에요.",
+        "english": "I'm not Korean. I'm American."
+      }
+    },
+    {
+      "id": 1040,
+      "korean": "노래",
+      "english": "song",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "K-POP은 노래입니다.",
+        "english": "K-POP is a song."
+      }
+    },
+    {
+      "id": 1041,
+      "korean": "드라마",
+      "english": "drama",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "한국 드라마를 좋아합니다.",
+        "english": "I like Korean dramas."
+      }
+    },
+    {
+      "id": 1042,
+      "korean": "음식",
+      "english": "food",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "김치, 비빔밥은 한국 음식입니다.",
+        "english": "Kimchi and bibimbap are Korean foods."
+      }
+    },
+    {
+      "id": 1043,
+      "korean": "전화",
+      "english": "phone call",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "전화를 합니다.",
+        "english": "I'm making a call."
+      }
+    },
+    {
+      "id": 1044,
+      "korean": "하다",
+      "english": "to do",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "노래를 합니다.",
+        "english": "I sing a song."
+      }
+    },
+    {
+      "id": 1045,
+      "korean": "좋아하다",
+      "english": "to like",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "한국 드라마를 좋아합니다.",
+        "english": "I like Korean dramas."
+      }
+    },
+    {
+      "id": 1046,
+      "korean": "가다",
+      "english": "to go",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "여행을 갑니다.",
+        "english": "I go on a trip."
+      }
+    },
+    {
+      "id": 1047,
+      "korean": "먹다",
+      "english": "to eat",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "한국 음식을 먹습니다.",
+        "english": "I eat Korean food."
+      }
+    },
+    {
+      "id": 1048,
+      "korean": "듣다",
+      "english": "to listen",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "한국 노래를 듣습니다.",
+        "english": "I listen to Korean songs."
+      }
+    },
+    {
+      "id": 1049,
+      "korean": "크다",
+      "english": "big",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "개가 큽니다.",
+        "english": "The dog is big."
+      }
+    },
+    {
+      "id": 1050,
+      "korean": "작다",
+      "english": "small",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "개가 작습니다.",
+        "english": "The dog is small."
+      }
+    },
+    {
+      "id": 1051,
+      "korean": "예쁘다",
+      "english": "pretty",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "꽃이 예쁩니다.",
+        "english": "The flowers are pretty."
+      }
+    },
+    {
+      "id": 1052,
+      "korean": "좋다",
+      "english": "good",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "한국 음식이 좋습니다.",
+        "english": "Korean food is good."
+      }
+    },
+    {
+      "id": 1053,
+      "korean": "개",
+      "english": "dog",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "개가 큽니다.",
+        "english": "The dog is big."
+      }
+    },
+    {
+      "id": 1054,
+      "korean": "꽃",
+      "english": "flower",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "꽃이 예쁩니다.",
+        "english": "The flowers are pretty."
+      }
+    },
+    {
+      "id": 1055,
+      "korean": "여행",
+      "english": "trip / travel",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "여행을 갑니다.",
+        "english": "I go on a trip."
+      }
+    },
+    {
+      "id": 1056,
+      "korean": "밥",
+      "english": "rice / meal",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "저는 밥을 먹습니다.",
+        "english": "I eat rice."
+      }
+    },
+    {
+      "id": 1057,
+      "korean": "여러분",
+      "english": "everyone",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "여러분은 한국 음식을 좋아합니까?",
+        "english": "Do you all like Korean food?"
+      }
+    },
+    {
+      "id": 1058,
+      "korean": "무슨",
+      "english": "what (+ noun)",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "무슨 노래를 듣습니까?",
+        "english": "What song do you listen to?"
+      }
+    },
+    {
+      "id": 1059,
+      "korean": "제일",
+      "english": "most / best",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "비빔밥을 제일 좋아합니다.",
+        "english": "I like bibimbap the most."
+      }
+    },
+    {
+      "id": 1060,
+      "korean": "야채",
+      "english": "vegetable",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "비빔밥은 야채가 많습니다.",
+        "english": "Bibimbap has a lot of vegetables."
+      }
+    },
+    {
+      "id": 1061,
+      "korean": "색",
+      "english": "color",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "색이 예쁩니다.",
+        "english": "The colors are pretty."
+      }
+    },
+    {
+      "id": 1062,
+      "korean": "자주",
+      "english": "often",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "비빔밥을 자주 먹습니다.",
+        "english": "I often eat bibimbap."
+      }
+    },
+    {
+      "id": 1063,
+      "korean": "재미있다",
+      "english": "fun / interesting",
+      "tags": [
+        "L5"
+      ],
+      "sentence": {
+        "korean": "그 노래가 재미있습니다.",
+        "english": "That song is interesting."
+      }
+    },
+    {
+      "id": 1064,
+      "korean": "-습니다/-ㅂ니다",
+      "english": "formal statement ending",
+      "tags": [
+        "L5_Grammar"
+      ],
+      "sentence": {
+        "korean": "노래가 좋습니다.",
+        "english": "The song is good."
+      }
+    },
+    {
+      "id": 1065,
+      "korean": "-습니까/-ㅂ니까",
+      "english": "formal question ending",
+      "tags": [
+        "L5_Grammar"
+      ],
+      "sentence": {
+        "korean": "노래가 좋습니까?",
+        "english": "Is the song good?"
+      }
+    },
+    {
+      "id": 1066,
+      "korean": "을/를",
+      "english": "object marker",
+      "tags": [
+        "L5_Grammar"
+      ],
+      "sentence": {
+        "korean": "노래를 듣습니다.",
+        "english": "I listen to a song."
+      }
+    },
+    {
+      "id": 1067,
+      "korean": "도",
+      "english": "also / too",
+      "tags": [
+        "L5_Grammar"
+      ],
+      "sentence": {
+        "korean": "저도 한국 음식을 좋아합니다.",
+        "english": "I also like Korean food."
+      }
+    },
+    {
+      "id": 1068,
+      "korean": "공부하다",
+      "english": "to study",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "한국어를 공부합니다.",
+        "english": "I study Korean."
+      }
+    },
+    {
+      "id": 1069,
+      "korean": "만나다",
+      "english": "to meet",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "리사 씨를 만납니다.",
+        "english": "I'm meeting Lisa."
+      }
+    },
+    {
+      "id": 1070,
+      "korean": "학교",
+      "english": "school",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "학교입니다.",
+        "english": "This is a school."
+      }
+    },
+    {
+      "id": 1071,
+      "korean": "교실",
+      "english": "classroom",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "교실입니다.",
+        "english": "This is a classroom."
+      }
+    },
+    {
+      "id": 1072,
+      "korean": "도서관",
+      "english": "library",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "도서관입니다.",
+        "english": "This is a library."
+      }
+    },
+    {
+      "id": 1073,
+      "korean": "건물",
+      "english": "building",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "학교, 식당, 도서관은 건물입니다.",
+        "english": "Schools, restaurants, libraries are buildings."
+      }
+    },
+    {
+      "id": 1074,
+      "korean": "식당",
+      "english": "restaurant",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "식당입니다.",
+        "english": "This is a restaurant."
+      }
+    },
+    {
+      "id": 1075,
+      "korean": "있다",
+      "english": "there is / to have",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "학생이 있습니다.",
+        "english": "There is a student."
+      }
+    },
+    {
+      "id": 1076,
+      "korean": "없다",
+      "english": "there isn't / to not have",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "학생이 없습니다.",
+        "english": "There are no students."
+      }
+    },
+    {
+      "id": 1077,
+      "korean": "많다",
+      "english": "a lot of / many",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "학생이 많습니다.",
+        "english": "There are many students."
+      }
+    },
+    {
+      "id": 1078,
+      "korean": "넓다",
+      "english": "wide / spacious",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "학교가 넓습니다.",
+        "english": "The school is spacious."
+      }
+    },
+    {
+      "id": 1079,
+      "korean": "따라 하세요",
+      "english": "repeat after me",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "여러분, 따라 하세요.",
+        "english": "Everyone, repeat after me."
+      }
+    },
+    {
+      "id": 1080,
+      "korean": "잘 모르겠어요",
+      "english": "I don't know",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "선생님, 잘 모르겠어요.",
+        "english": "Teacher, I don't know."
+      }
+    },
+    {
+      "id": 1081,
+      "korean": "질문",
+      "english": "question",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "질문이 있어요.",
+        "english": "I have a question."
+      }
+    },
+    {
+      "id": 1082,
+      "korean": "모르다",
+      "english": "to not know",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "잘 모르겠어요.",
+        "english": "I don't really know."
+      }
+    },
+    {
+      "id": 1083,
+      "korean": "책상",
+      "english": "desk",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "이것은 책상입니다.",
+        "english": "This is a desk."
+      }
+    },
+    {
+      "id": 1084,
+      "korean": "의자",
+      "english": "chair",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "의자가 많습니다.",
+        "english": "There are many chairs."
+      }
+    },
+    {
+      "id": 1085,
+      "korean": "지도",
+      "english": "map",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "지도도 있습니다.",
+        "english": "There's also a map."
+      }
+    },
+    {
+      "id": 1086,
+      "korean": "시계",
+      "english": "clock",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "시계하고 지도가 있습니다.",
+        "english": "There's a clock and a map."
+      }
+    },
+    {
+      "id": 1087,
+      "korean": "칠판",
+      "english": "blackboard",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "칠판이 있습니다.",
+        "english": "There is a blackboard."
+      }
+    },
+    {
+      "id": 1088,
+      "korean": "컴퓨터",
+      "english": "computer",
+      "tags": [
+        "L6"
+      ],
+      "sentence": {
+        "korean": "컴퓨터는 없습니다.",
+        "english": "There's no computer."
+      }
+    },
+    {
+      "id": 1089,
+      "korean": "과/와, 하고",
+      "english": "and (connecting nouns)",
+      "tags": [
+        "L6_Grammar"
+      ],
+      "sentence": {
+        "korean": "형과 누나가 있습니다.",
+        "english": "I have an older brother and older sister."
+      }
+    },
+    {
+      "id": 1090,
+      "korean": "의",
+      "english": "possessive (of)",
+      "tags": [
+        "L6_Grammar"
+      ],
+      "sentence": {
+        "korean": "선생님의 개가 귀엽습니다.",
+        "english": "The teacher's dog is cute."
+      }
+    },
+    {
+      "id": 1091,
+      "korean": "안녕히 계세요",
+      "english": "goodbye (to person staying)",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "안녕히 계세요.",
+        "english": "Goodbye (you stay)."
+      }
+    },
+    {
+      "id": 1092,
+      "korean": "안녕히 가세요",
+      "english": "goodbye (to person leaving)",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "안녕히 가세요.",
+        "english": "Goodbye (you go)."
+      }
+    },
+    {
+      "id": 1093,
+      "korean": "네",
+      "english": "yes",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "네, 학생이에요.",
+        "english": "Yes, I'm a student."
+      }
+    },
+    {
+      "id": 1094,
+      "korean": "아니요",
+      "english": "no",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "아니요, 선생님이에요.",
+        "english": "No, I'm a teacher."
+      }
+    },
+    {
+      "id": 1095,
+      "korean": "만나서 반가워요",
+      "english": "nice to meet you",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "만나서 반가워요.",
+        "english": "Nice to meet you."
+      }
+    },
+    {
+      "id": 1096,
+      "korean": "처음 뵙겠습니다",
+      "english": "nice to meet you (formal)",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "처음 뵙겠습니다.",
+        "english": "Nice to meet you (formal)."
+      }
+    },
+    {
+      "id": 1097,
+      "korean": "오랜만입니다",
+      "english": "long time no see",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "오랜만입니다.",
+        "english": "Long time no see."
+      }
+    },
+    {
+      "id": 1098,
+      "korean": "취미",
+      "english": "hobby",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "제 취미는 하이킹이에요.",
+        "english": "My hobby is hiking."
+      }
+    },
+    {
+      "id": 1099,
+      "korean": "기분",
+      "english": "feeling / mood",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "기분이 어때요?",
+        "english": "How are you feeling?"
+      }
+    },
+    {
+      "id": 1100,
+      "korean": "좋아요",
+      "english": "good (casual)",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "좋아요.",
+        "english": "It's good."
+      }
+    },
+    {
+      "id": 1101,
+      "korean": "괜찮아요",
+      "english": "I'm okay",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "괜찮아요.",
+        "english": "I'm okay."
+      }
+    },
+    {
+      "id": 1102,
+      "korean": "피곤해요",
+      "english": "I'm tired",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "피곤해요.",
+        "english": "I'm tired."
+      }
+    },
+    {
+      "id": 1103,
+      "korean": "행복해요",
+      "english": "I'm happy",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "행복해요.",
+        "english": "I'm happy."
+      }
+    },
+    {
+      "id": 1104,
+      "korean": "안",
+      "english": "inside",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "집 안에 있어요.",
+        "english": "I'm inside the house."
+      }
+    },
+    {
+      "id": 1105,
+      "korean": "밖",
+      "english": "outside",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "밖에 있는 시간이 좋아요.",
+        "english": "I like time spent outside."
+      }
+    },
+    {
+      "id": 1106,
+      "korean": "집",
+      "english": "house / home",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "집 안에 있어요.",
+        "english": "I'm inside the house."
+      }
+    },
+    {
+      "id": 1107,
+      "korean": "회사",
+      "english": "company / office",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "회사 밖에 있어요.",
+        "english": "I'm outside the office."
+      }
+    },
+    {
+      "id": 1108,
+      "korean": "방",
+      "english": "room",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "방 안에 있어요.",
+        "english": "I'm inside the room."
+      }
+    },
+    {
+      "id": 1109,
+      "korean": "가방",
+      "english": "bag",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "가방 안에 있어요.",
+        "english": "It's inside the bag."
+      }
+    },
+    {
+      "id": 1110,
+      "korean": "직장인",
+      "english": "office worker (general)",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "저는 직장인이에요.",
+        "english": "I'm an office worker."
+      }
+    },
+    {
+      "id": 1111,
+      "korean": "한국인",
+      "english": "Korean person",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "저는 한국인이에요.",
+        "english": "I'm Korean."
+      }
+    },
+    {
+      "id": 1112,
+      "korean": "미국인",
+      "english": "American",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "저는 미국인이에요.",
+        "english": "I'm American."
+      }
+    },
+    {
+      "id": 1113,
+      "korean": "한국어",
+      "english": "Korean (language)",
+      "tags": [
+        "QR"
+      ],
+      "sentence": {
+        "korean": "한국어를 공부합니다.",
+        "english": "I study Korean."
+      }
+    },
+    {
+      "id": 1114,
+      "korean": "날씨",
+      "english": "weather",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "오늘 날씨 어때요?",
+        "english": "How's the weather today?"
+      }
+    },
+    {
+      "id": 1115,
+      "korean": "오늘",
+      "english": "today",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "오늘 날씨 어때요?",
+        "english": "How's the weather today?"
+      }
+    },
+    {
+      "id": 1116,
+      "korean": "어때요",
+      "english": "how is it?",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "기분이 어때요?",
+        "english": "How are you feeling?"
+      }
+    },
+    {
+      "id": 1117,
+      "korean": "물",
+      "english": "water",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "물을 마십니다.",
+        "english": "I drink water."
+      }
+    },
+    {
+      "id": 1118,
+      "korean": "마시다",
+      "english": "to drink",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "물을 마십니다.",
+        "english": "I drink water."
+      }
+    },
+    {
+      "id": 1119,
+      "korean": "김밥",
+      "english": "kimbap (rice roll)",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "김밥을 먹습니다.",
+        "english": "I eat kimbap."
+      }
+    },
+    {
+      "id": 1120,
+      "korean": "소리",
+      "english": "sound",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "소리가 좋습니다.",
+        "english": "The sound is good."
+      }
+    },
+    {
+      "id": 1121,
+      "korean": "왜",
+      "english": "why",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "왜 한국어를 공부합니까?",
+        "english": "Why do you study Korean?"
+      }
+    },
+    {
+      "id": 1122,
+      "korean": "왜냐하면",
+      "english": "because",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "왜냐하면 한국이 좋아요.",
+        "english": "Because I like Korea."
+      }
+    },
+    {
+      "id": 1123,
+      "korean": "어디",
+      "english": "where",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "어디에서 왔어요?",
+        "english": "Where are you from?"
+      }
+    },
+    {
+      "id": 1124,
+      "korean": "나",
+      "english": "I (casual)",
+      "tags": [
+        "iTalki"
+      ],
+      "sentence": {
+        "korean": "나는 학생이야.",
+        "english": "I'm a student."
+      }
+    },
+    {
+      "id": 1125,
+      "korean": "뭐",
+      "english": "what",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "이름이 뭐예요?",
+        "english": "What's your name?"
+      }
+    },
+    {
+      "id": 1126,
+      "korean": "누구",
+      "english": "who",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "누구예요?",
+        "english": "Who is it?"
+      }
+    },
+    {
+      "id": 1127,
+      "korean": "여기",
+      "english": "here",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "여기는 교실입니다.",
+        "english": "This place is a classroom."
+      }
+    },
+    {
+      "id": 1128,
+      "korean": "저것",
+      "english": "that (over there)",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "저것은 책상입니다.",
+        "english": "That is a desk."
+      }
+    },
+    {
+      "id": 1129,
+      "korean": "이것",
+      "english": "this",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "이것은 책상입니다.",
+        "english": "This is a desk."
+      }
+    },
+    {
+      "id": 1130,
+      "korean": "지금",
+      "english": "now",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "지금 무엇을 합니까?",
+        "english": "What are you doing now?"
+      }
+    },
+    {
+      "id": 1131,
+      "korean": "무엇",
+      "english": "what (formal)",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "지금 무엇을 먹습니까?",
+        "english": "What are you eating now?"
+      }
+    },
+    {
+      "id": 1132,
+      "korean": "그리고",
+      "english": "and (sentence connector)",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "그리고 시계도 있습니다.",
+        "english": "And there's also a clock."
+      }
+    },
+    {
+      "id": 1133,
+      "korean": "하지만",
+      "english": "but / however",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "하지만 컴퓨터는 없습니다.",
+        "english": "But there's no computer."
+      }
+    },
+    {
+      "id": 1134,
+      "korean": "그래서",
+      "english": "so / therefore",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "그래서 비빔밥을 자주 먹습니다.",
+        "english": "So I often eat bibimbap."
+      }
+    },
+    {
+      "id": 1135,
+      "korean": "아주",
+      "english": "very",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "한국 음식을 아주 좋아합니다.",
+        "english": "I really like Korean food."
+      }
+    },
+    {
+      "id": 1136,
+      "korean": "우리",
+      "english": "we / our",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "우리 가족이에요.",
+        "english": "This is our family."
+      }
+    },
+    {
+      "id": 1137,
+      "korean": "제",
+      "english": "my (polite)",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "제 이름은 Jeff예요.",
+        "english": "My name is Jeff."
+      }
+    },
+    {
+      "id": 1138,
+      "korean": "내",
+      "english": "my (casual)",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "내 이름은 Jeff야.",
+        "english": "My name is Jeff."
+      }
+    },
+    {
+      "id": 1139,
+      "korean": "저",
+      "english": "I (polite)",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "저는 미국 사람이에요.",
+        "english": "I'm American."
+      }
+    },
+    {
+      "id": 1140,
+      "korean": "모두",
+      "english": "all / everyone",
+      "tags": [
+        "Common"
+      ],
+      "sentence": {
+        "korean": "모두 나라예요.",
+        "english": "They're all countries."
       }
     }
   ]
